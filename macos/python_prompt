@@ -2,7 +2,10 @@
 #
 # This unified log filter can help with tracking down what might be causing '"Application" needs to be udpated' prompts in macOS Monterey
 #
-#
+# Filter Level:
+
+Default
+
 # Filter Predicate: 
 
 process == "pythonprompt" AND eventMessage contains[cd] "Showing alert"
