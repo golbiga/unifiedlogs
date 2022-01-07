@@ -1,0 +1,13 @@
+# python_prompt
+#
+# This unified log filter can help with tracking down what might be causing '"Application" needs to be udpated' prompts in macOS Monterey
+#
+#
+# Filter Predicate: 
+
+process == "pythonprompt" AND eventMessage contains[cd] "Showing alert"
+
+# Example Output:
+
+2021-XX-XX XX:39:43.042968-0500 XXXXXX  Default  XXXXXX     XXX  0    pythonprompt: Showing alert to user because "Visual Studio Code" needs to be updated. Reason: Python 2.7 has reached sunset, and the caller is running the Python 2.7 script: /Users/username/.vscode/extensions/ms-python.python-2021.11.1422169775/pythonFiles/interpreterInfo.py.
+
