@@ -1,0 +1,16 @@
+# cfprefsd_write_to_key
+#
+# This unified log filter can help with tracking down payloads and preference keys for macOS and third-party apps.
+#
+#
+# Filter Level:
+
+Debug
+
+# Filter Predicate: 
+
+process == "cfprefsd" AND eventMessage contains[cd] "wrote the key" AND NOT eventMessage contains[cd] "NSWindow"
+
+# Example Output:
+
+2022-XX-XX XX:04:14.503892-0500 XXXXXX   Debug    XXXXXX      XXX    0    cfprefsd: (CoreFoundation) [com.apple.defaults:cfprefsd] Process XXXXXX (SharingBluetoothService) wrote the key(s) PrefKeyServicesEnabled in { com.apple.Bluetooth, username, kCFPreferencesCurrentHost, /Users/username/Library/Preferences/ByHost/com.apple.Bluetooth.UUID.plist, managed: 0 }
