@@ -1,1 +1,3 @@
 = Unified Logs for macOS
+
+Collection of Unified Logs that I've collected over time.
