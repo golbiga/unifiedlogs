@@ -1,7 +1,7 @@
 # cfprefsd_write_to_key
 #
 # This unified log filter can help with tracking down payloads and preference keys for macOS and third-party apps.
-#
+# Thanks Bob!
 #
 # Filter Level:
 
