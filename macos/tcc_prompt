@@ -1,0 +1,12 @@
+# tcc_prompt
+#
+# This unified log filter can help with tracking down what might be causing TCC prompts in macOS.
+#
+#
+# Filter Level:
+
+Debug
+
+# Filter Predicate: 
+
+subsystem == "com.apple.TCC" AND eventMessage BEGINSWITH "AttributionChain"
