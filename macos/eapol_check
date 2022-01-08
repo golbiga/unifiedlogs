@@ -1,0 +1,13 @@
+# eapol_check
+#
+# This unified log filter can help with tracking down 802.1x issues in macOS.
+#
+# Filter Level:
+
+Debug
+
+# Filter Predicate: 
+
+processImagePath ENDSWITH "eapolclient" AND subsystem == "com.apple.eapol"
+
+# Example Output:

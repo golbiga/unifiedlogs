@@ -1,0 +1,17 @@
+# seedutil_change
+#
+# This unified log filter can check for enrollment/un-enrollment to seedutil.
+#
+# Filter Level:
+
+Default
+
+# Filter Predicate: 
+
+processImagePath ENDSWITH "seedutil" AND subsystem == "com.apple.seeding" AND (eventMessage contains[c] "Un-enrolling" OR eventMessage contains[c] "enrolling")
+
+# Example Output:
+
+2022-XX-XX XX:01:07.600668-0500 XXXXXX     Default     XXXXXX         XXXXXX   0    seedutil: (Seeding) [com.apple.seeding:Framework] Seeding: Un-enrolling
+2022-XX-XX XX:01:07.602375-0500 XXXXXX     Default     XXXXXX         XXXXXX   0    seedutil: (Seeding) [com.apple.seeding:Framework] Seeding: Un-enrolling from seed program: DeveloperSeed
+2022-XX-XX XX:01:12.505780-0500 XXXXXX     Default     XXXXXX         XXXXXX   0    seedutil: (Seeding) [com.apple.seeding:Framework] Seeding: Enrolling in seed program: DeveloperSeed
