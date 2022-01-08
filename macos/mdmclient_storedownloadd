@@ -1,0 +1,12 @@
+# mdmclient_storedownloadd
+#
+# This unified log filter can help with troubleshooting MDM app installs
+
+#
+# Filter Level:
+
+Debug
+
+# Filter Predicate: 
+
+processImagePath contains "mdmclient" OR processImagePath contains "storedownloadd"'

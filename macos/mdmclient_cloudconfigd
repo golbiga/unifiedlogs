@@ -1,0 +1,12 @@
+# mdmclient_cloudconfigd
+#
+# This unified log filter can help with troubleshooting MDM communication issues.
+
+#
+# Filter Level:
+
+Debug
+
+# Filter Predicate: 
+
+processImagePath contains "mdmclient" OR processImagePath contains "cloudconfigd"
