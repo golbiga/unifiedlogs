@@ -1,0 +1,12 @@
+# securityd_KCdb
+#
+# This unified log filter can help with troubleshooting Keychain issues.
+
+#
+# Filter Level:
+
+Debug
+
+# Filter Predicate: 
+
+subsystem == "com.apple.securityd" AND category == "KCdb"
